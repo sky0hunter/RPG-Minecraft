@@ -1,0 +1,73 @@
+name: Tierbaendiger
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Schuetze
+    weak:
+description: Tierbaendiger spezialisieren sich auf den Kampf mit Tieren.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Wolf:
+       level: 1
+    PoisonArrow:
+        level: 1
+        mana: 25
+        cooldown: 30000
+        tick-damage: 5
+        duration: 20000
+        period: 2500
+    Web:
+        level: 10
+        max-distance: 20
+        duration: 10000
+        mana: 20
+        cooldown: 20000
+    Cow:
+        level: 20
+        mana: 10
+        cooldown: 5000
+    Pig:
+        level: 20
+        mana: 10
+        cooldown: 5000
+    Chicken:
+        level: 20
+        mana: 10
+        cooldown: 5000
+    Piggify:
+        level: 30
+        mana: 30
+        cooldown: 30000
+        max-distance: 15
+        duration: 10000
+    Charge:
+        level: 40
+        max-distance: 15
+        radius: 5
+        duration: 3000
+        damage: 15
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 4
+  WOOD_SWORD: 7
+  STONE_SWORD: 8
+  IRON_SWORD: 10
+projectile-damage:
+  Arrow: 15
+tier: 2
+recipes: [ default ]

@@ -1,0 +1,74 @@
+name: Schurke
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Anfaenger
+    weak:
+description: Der Pfad der Diebe und Trickser.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Sneak:
+        duration: 600000
+        damage-cancels: true
+        atacking-cancels: true
+        refresh-interval: 5000
+        level: 1
+        mana: 15
+        cooldown: 2000
+    Poison:
+        level: 10
+        max-distance: 5
+        duration: 10000
+        period: 2000
+        tick-damage: 3
+        mana: 30
+        cooldown: 20000
+    Backstab:
+        level: 20
+        attack-bonus: 1.5
+        attack-chance: 0.5
+        sneak-bonus: 2.5
+        sneak-chance: 1.0
+    Escape:
+        level: 30
+        duration: 5000
+        max-distance: 15
+        mana: 50
+        cooldown: 30000
+    EscapeArtist:
+        level: 30
+        duration: 5000
+        max-distance: 15
+        mana: 50
+        cooldown: 30000
+    Critical:
+        level: 40
+        chance: 0.2
+        damage-multiplier: 1.5
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 20
+max-health-per-level: 0.5
+expmodifier: 4.0
+item-damage:
+  air: 2
+  WOOD_SWORD: 6
+  STONE_SWORD: 7
+  IRON_SWORD: 9
+projectile-damage:
+  Arrow: 3
+tier: 1
+recipes: [ default ]

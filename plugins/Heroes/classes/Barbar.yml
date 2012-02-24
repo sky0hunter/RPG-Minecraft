@@ -1,0 +1,60 @@
+name: Barbar
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Krieger
+    weak:
+description: Barbaren spezialisieren sich auf den Kampf mit Aexten.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD_AXE
+permitted-skills:
+    Basher:
+        level: 1
+        cooldown: 5000
+        chance-to-stun: 1
+        duration: 1000
+    Charge:
+        level: 10
+        max-distance: 10
+        stun-duration: 5000
+        damage: 10
+        radius: 10
+        cooldown: 20000
+        mana: 50
+    Critical:
+        level: 20
+        chance: 0.5
+        damage-multiplier: 1.5
+    Bleed:
+        level: 30
+        mana: 20
+        max-distance: 5
+        duration: 15000
+        period: 1500
+        tick-damage: 2
+experience-sources:
+- KILLING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 50
+max-health-per-level: 1
+expmodifier: 2.0
+item-damage:
+  air: 5
+  WOOD_AXE: 4
+  STONE_AXE: 5
+  IRON_AXE: 7
+  GOLD_AXE: 10
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

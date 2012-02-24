@@ -1,0 +1,22 @@
+name: Fischer
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das Fischen lieben.
+permitted-armor:
+permitted-weapon:
+    - FISHING_ROD
+permitted-skills:
+    Fishing:
+        level: 1
+        chance-per-level: 0.01
+        leather-level: 5
+        enable-leather: true
+experience-sources:
+- FISHING
+- FARMING
+permission-skills:
+expmodifier: 30.0
+tier: 1
+recipes: [ default ]

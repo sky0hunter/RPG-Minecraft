@@ -1,0 +1,16 @@
+name: Schaefer
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das sammeln von Wolle lieben.
+permitted-armor:
+permitted-weapon:
+    - SHEARS
+permitted-skills:
+experience-sources:
+- MINING
+permission-skills:
+expmodifier: 20.0
+tier: 1
+recipes: [ default ]

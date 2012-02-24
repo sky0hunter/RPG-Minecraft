@@ -1,0 +1,71 @@
+name: Minnesaenger
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Barde
+    weak:
+description: Minnesaenger koennen mit ihren Liedern maechtige Zauber wirken.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Sneak:
+        level: 1
+        cooldown: 1000
+        mana: 5
+    GroupHeal:
+        level: 1
+        mana: 5
+        heal-amount: 3
+        cooldown: 500
+    Might:
+        level: 10
+        radius: 15
+        damage-bonus: 1.2
+        duration: 30000
+        cooldown: 20000
+        mana: 40
+    Wisdom:
+        level: 20
+        regen-multiplier: 1.5
+        radius: 15
+        cooldown: 20000
+        duration: 30000
+        mana: 40
+    GuardianAngel:
+        level: 30
+        radius: 15
+        duration: 3000
+    IceAura:
+        level: 40
+        tick-damage: 3
+        period: 1000
+        radius: 15
+        mana: 5
+        mana-reduce: 1.0
+        cooldown: 30000
+experience-sources:
+- KILLING
+- PVP
+- MINING
+permission-skills:
+base-max-health: 35
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 4
+  WOOD SWORD: 5
+  STONE SWORD: 6
+  IRON SWORD: 7
+  jukebox: 8
+projectile-damage:
+  Arrow: 10
+tier: 3
+recipes: [ default ]

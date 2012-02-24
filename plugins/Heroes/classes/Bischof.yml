@@ -1,0 +1,65 @@
+name: Bischof
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Priester
+    weak:
+description: Bischoefe sind Meister der Heilung.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Bandage:
+        level: 1
+        max-distance: 5
+        reagent: PAPER
+        reagent-cost: 1
+        health: 5
+        mana: 25
+        cooldown: 1
+    Dispel:
+        level: 10
+        max-distance: 15
+        max-removals: 2
+        mana: 25
+        cooldown: 30
+    HealBomb:
+        level: 20
+        max-distance: 15
+        health: 15
+        damage: 10
+        radius: 5
+        mana: 50
+        cooldown: 20
+    Antidote:
+        level: 30
+        mana: 20
+        cooldown: 10
+        max-distance: 15
+    GroupHeal:
+        level: 40
+        heal-amount: 5
+        radius: 5
+        cooldown: 2
+        mana: 15
+experience-sources:
+- KILLING
+- PVP
+- CRAFTING
+permission-skills:
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 3
+  book: 11
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

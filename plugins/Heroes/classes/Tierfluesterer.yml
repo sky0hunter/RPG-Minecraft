@@ -1,0 +1,91 @@
+name: Tierfluesterer
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Tierbaendiger
+    weak:
+description: Tierfluesterer sind eins mit den Tieren.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD
+- BOW
+permitted-skills:
+    Wolf:
+       level: 1
+    PoisonArrow:
+        level: 1
+        mana: 25
+        cooldown: 35000
+        tick-damage: 6
+        duration: 25000
+        period: 2500
+    Web:
+        level: 10
+        max-distance: 25
+        duration: 15000
+        mana: 15
+        cooldown: 15000
+    Cow:
+        level: 1
+        mana: 5
+        cooldown: 3000
+    Pig:
+        level: 1
+        mana: 5
+        cooldown: 3000
+    Chicken:
+        level: 1
+        mana: 5
+        cooldown: 3000
+    Piggify:
+        level: 10
+        mana: 25
+        cooldown: 30000
+        max-distance: 20
+        duration: 15000
+    Charge:
+        level: 30
+        max-distance: 20
+        radius: 7
+        duration: 5000
+        damage: 25
+        cooldown: 15000
+    Confuse:
+        level: 40
+        mana: 30
+        cooldown: 25000
+        duration: 10000
+        period: 1000
+        max-drift: 0.5
+    WolfForm:
+        level: 50
+        mana: 50
+        cooldown: 90000
+        speed-bonus: 2
+        duration: 60000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+    Tame:
+        level: 20
+base-max-health: 50
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 5
+  WOOD_SWORD: 8
+  STONE_SWORD: 9
+  IRON_SWORD: 11
+  GOLD_SWORD: 13
+projectile-damage:
+  Arrow: 18
+tier: 3
+recipes: [ default ]

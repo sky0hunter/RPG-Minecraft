@@ -1,0 +1,27 @@
+name: Admin
+default: false
+user-class: false
+primary: true
+secondary: false
+description: Admin Power!
+permitted-armor:
+- '*'
+permitted-weapon:
+- '*'
+permitted-skills:
+    ALL: true
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+permission-skills:
+base-max-health: 100
+max-health-per-level: 1
+expmodifier: 500.0
+item-damage:
+  air: 50
+projectile-damage:
+  Arrow: 3
+tier: 0
+recipes: [ default ]

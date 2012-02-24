@@ -1,0 +1,78 @@
+name: Hexer
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Novize
+    weak:
+description: Hexer spezialisieren sich auf Beschwoerungsmagie.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Fireball:
+        damage: 10
+        cooldown: 2000
+        level: 1
+    Bolt:
+        level: 1
+        damage: 20
+        mana: 15
+        cooldown: 5000
+    Zombie:
+        level: 10
+        mana: 5
+        cooldown: 2000
+    Tether:
+        level: 10
+        mana: 15
+        cooldown: 15000
+        duration: 7500
+    Creeper:
+        level: 20
+        mana: 5
+        cooldown: 5000
+    Piggify:
+        level: 20
+        mana: 25
+        max-distance: 15
+        duration: 10000
+        cooldown: 15000
+    Skele:
+        level: 30
+        mana: 5
+        cooldown: 3000
+    Curse:
+        level: 30
+        max-distance: 15
+        duration: 20000
+        mana: 35
+        cooldown: 30000
+        miss-chance: 0.5
+    BurningPresence:
+        level: 40
+        tick-damage: 3
+        period: 1000
+        radius: 15
+        cooldown: 30000
+        mana-reduce: 30
+        mana: 30
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 3
+  stick: 8
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

@@ -1,0 +1,82 @@
+name: Erzmagier
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Magier
+    weak:
+description: Erzmagier sind maechtige arkane Magier.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Fireball:
+        level: 1
+        damage: 15
+        fire-ticks: 1
+        mana: 10
+        cooldown: 1000
+    Consume:
+        level: 1
+        mana_give: 20
+        reagent: MELON
+        reagent-cost: 1
+    Telekinesis:
+        level: 1
+        max-distance: 25
+        cooldown: 2000
+        mana: 5
+    Multibolt:
+        level: 1
+        max_strikes: 10
+        multiplier_chance: 10
+        damage: 5
+        range: 50
+        mana: 35
+        cooldown: 30000
+    Wisdom:
+       level: 20
+       radius: 15
+       mana: 25
+       regen-multiplier: 1.5
+       duration: 60000
+       cooldown: 90000
+    RegenMana:
+       level: 20
+       regen-amount: 5
+    MegaBolt:
+       level: 30
+       radius: 30
+       damage: 35
+       mana: 75
+       cooldown: 60000
+    Port:
+       level: 40
+       radius: 20
+       location-limit: 5
+       mana: 50
+       cooldown: 60000
+    Dampen:
+       level: 50
+       block-if-mana-below: 65
+       mana-required: 35
+       cooldown: 3000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 4
+  stick: 7
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

@@ -1,0 +1,62 @@
+name: Ingenieur
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Fallensteller
+    weak:
+description: Ingenieure sind Meister der Technik.
+permitted-armor:
+- LEATHER
+- IRON
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Sneak:
+        duration: 600000
+        level: 1
+        cooldown: 1000
+        mana: 5
+    Repair:
+        level: 10
+    Blink:
+        level: 40
+        mana: 20
+        cooldown: 20000
+        max-distance: 20
+    Smoke:
+        level: 50
+        mana: 50
+        duration: 120000
+        cooldown: 60000
+        reagent: SULPHUR
+        reagent-cost: 1
+experience-sources:
+- KILLING
+- CRAFTING
+- PVP
+- MINING
+permission-skills:
+    BasicIC:
+        level: 1
+    DetectionIC:
+        level: 10
+    TriggerIC:
+        level: 20
+    BuildingIC:
+        level: 30
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 1.5
+item-damage:
+  air: 4
+  workbench: 9
+projectile-damage:
+  Arrow: 10
+tier: 3
+recipes: [ default ]

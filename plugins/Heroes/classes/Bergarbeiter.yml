@@ -1,0 +1,18 @@
+name: Bergarbeiter
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das abbauen von Erzen lieben.
+permitted-armor:
+permitted-weapon:
+    - DIAMOND_PICKAXE
+permitted-skills:
+    Mining:
+        level: 50
+experience-sources:
+- MINING
+permission-skills:
+expmodifier: 5.0
+tier: 1
+recipes: [ default ]

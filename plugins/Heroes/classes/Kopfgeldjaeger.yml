@@ -1,0 +1,66 @@
+name: Kopfgeldjaeger
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Scharfschuetze
+    weak:
+description: Kopfgeldjaeger sind Meister darin ihre Gegner zur Strecke zu bringen... egal auf welche Distanz.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Critical:
+        level: 1
+        chance: 0.3
+        damage-multiplier: 2.0
+    ExplodingArrow:
+        level: 1
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        attacks: 3
+        DAMAGE: 25
+        radius: 4        
+    Safefall: 
+        level: 30
+        duration: 20000   
+    Headshot:
+        level: 20
+        mana: 30
+        duration: 4000
+    Spines:
+        level: 40
+        chance-to-shoot-arrows: 0.3
+        cooldown: 500 
+    Camp:
+        level: 30
+        cooldown: 10000
+    Track:
+        mana: 50
+        level: 10
+        randomness: 5
+        cooldown: 45000    
+    Hunt:      
+        level: 50  
+        radius: 250
+        cooldown: 120000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 4
+projectile-damage:
+  Arrow: 30
+tier: 3
+recipes: [ default ]

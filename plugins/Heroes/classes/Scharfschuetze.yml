@@ -1,0 +1,64 @@
+name: Scharfschuetze
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Schuetze
+    weak:
+description: Scharfschuetzen spezialisieren sich auf den Kampf mit dem Bogen.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Critical:
+        level: 1
+        chance: 0.1
+        damage-multiplier: 2.0
+    ExplodingArrow:
+        level: 1
+        mana: 20
+        mana-per-shot: 20
+        cooldown: 1000
+        attacks: 3
+        DAMAGE: 20
+        block-dmg: 0
+        radius: 3
+    Snipe:
+        level: 10
+        mana: 50
+        duration: 3000
+        damage: 40
+        cooldown: 3000 
+    Headshot:
+        level: 20
+        mana: 50
+        duration: 4000
+        cooldown: 7500
+    FireArrow:
+        level: 30
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        damage: 30
+    Camp:
+        level: 40
+        cooldown: 1000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 4
+projectile-damage:
+  Arrow: 25
+tier: 2
+recipes: [ default ]

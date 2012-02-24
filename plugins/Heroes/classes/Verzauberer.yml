@@ -1,0 +1,15 @@
+name: Verzauberer
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das Verzaubern lieben.
+permitted-armor:
+permitted-weapon:
+permitted-skills:
+experience-sources:
+- ENCHANTING
+permission-skills:
+expmodifier: 1.0
+tier: 1
+recipes: [ default ]

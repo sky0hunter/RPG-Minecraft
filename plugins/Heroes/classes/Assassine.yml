@@ -1,0 +1,101 @@
+name: Assassine
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Attentaeter
+    weak:
+description: Assassinen sind meister des Toetens.
+permitted-armor:
+- LEATHER
+- GOLD
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD_SWORD
+- DIAMOND_SWORD
+permitted-skills:
+    Sneak:
+        duration: 600000
+        damage-cancels: true
+        atacking-cancels: true
+        refresh-interval: 5000
+        level: 1
+        mana: 10
+        cooldown: 1000
+    Poison:
+        level: 1
+        max-distance: 15
+        duration: 10000
+        period: 2000
+        tick-damage: 6
+        mana: 25
+        cooldown: 15000
+    Backstab:
+        level: 1
+        attack-bonus: 3.0
+        attack-chance: 0.5
+        sneak-bonus: 4.0
+        sneak-chance: 1.0
+    Escape:
+        level: 10
+        duration: 5000
+        max-distance: 25
+        mana: 25
+        cooldown: 30000
+    EscapeArtist:
+        level: 10
+        duration: 5000
+        max-distance: 25
+        mana: 25
+        cooldown: 30000
+    Critical:
+        level: 20
+        chance: 50
+        damage-multiplier: 1.5
+    Cripple:
+        level: 40
+        duration: 10000
+        period: 1000
+        tick-damage: 5
+        damage: 10
+        mana: 5
+        cooldown: 10000
+    Smoke:
+        level: 30
+        duration: 35000
+        mana: 25
+        cooldown: 20000
+    Jump:
+        level: 40
+        cooldown: 2000
+        mana: 5
+    One:
+        level: 50
+        duration: 15000
+        speed-multiplier: 2
+        mana: 40
+        cooldown: 30000
+        reagent: feather
+        reagent-cost: 1
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 25
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 5
+  WOOD_SWORD: 9
+  STONE_SWORD: 10
+  IRON_SWORD: 12
+  GOLD_SWORD: 14
+  DIAMOND_SWORD: 16
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

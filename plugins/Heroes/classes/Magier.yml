@@ -1,0 +1,72 @@
+name: Magier
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Novize
+    weak:
+description: Magier spezialisieren sich auf Arkane Magie.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Fireball:
+        level: 1
+        damage: 15
+        fire-ticks: 1
+        mana: 10
+        cooldown: 1000
+    Consume:
+        level: 1
+        mana_give: 20
+        reagent: MELON
+        cooldown: 500
+        reagent-cost: 1
+    Telekinesis:
+        level: 10
+        max-distance: 25
+        cooldown: 2000
+        mana: 5
+    Multibolt:
+        level: 10
+        max_strikes: 10
+        multiplier_chance: 10
+        damage: 5
+        range: 50
+        mana: 35
+        cooldown: 30000
+    Slow:
+       level: 20
+       speed-multiplier: 4
+       duration: 7500
+       mana: 30
+       max-distance: 20
+       cooldown: 10000
+    RegenMana:
+       level: 30
+       regen-amount: 5
+    MegaBolt:
+       level: 40
+       radius: 20
+       damage: 35
+       mana: 75
+       cooldown: 60000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 25
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 3
+  stick: 7
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

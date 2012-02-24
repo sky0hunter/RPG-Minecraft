@@ -1,0 +1,16 @@
+name: Buddler
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das buddeln lieben.
+permitted-armor:
+permitted-weapon:
+    - DIAMOND_SPADE
+permitted-skills:
+experience-sources:
+- MINING
+permission-skills:
+expmodifier: 10.0
+tier: 1
+recipes: [ default ]

@@ -1,0 +1,18 @@
+name: Holzfaeller
+default: false
+user-class: true
+primary: false
+secondary: true
+description: Fuer alle die das abbauen von Baeumen lieben.
+permitted-armor:
+permitted-weapon:
+    - DIAMOND_AXE
+permitted-skills:
+    Woodcutting:
+        level: 50
+experience-sources:
+- LOGGING
+permission-skills:
+expmodifier: 10.0
+tier: 1
+recipes: [ default ]

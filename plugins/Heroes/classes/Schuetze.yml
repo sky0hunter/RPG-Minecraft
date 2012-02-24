@@ -1,0 +1,69 @@
+name: Schuetze
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Anfaenger
+    weak:
+description: Der Pfad der Schuetzen.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- BOW
+- IRON
+permitted-skills:
+    Critical:
+        level: 1
+        chance: 0.05
+        damage-multiplier: 2.0
+    PoisonArrow:
+        level: 10
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        tick-damage: 4
+        duration: 10000
+        period: 2500
+    FireArrow:
+        level: 20
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        damage: 15
+        fire-ticks: 100
+    IceArrow:
+        level: 30
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        slow-duration: 10000
+        speed-multiplier: 2
+    ExplodingArrow:
+        level: 40
+        mana: 1
+        mana-per-shot: 40
+        cooldown: 1000
+        DAMAGE: 20
+        radius: 5
+        attacks: 1
+        block-dmg: 0
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 20
+max-health-per-level: 0.5
+expmodifier: 4.0
+item-damage:
+  air: 2
+projectile-damage:
+  Arrow: 9
+tier: 1
+recipes: [ default ]

@@ -1,0 +1,68 @@
+name: Krieger
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Anfaenger
+    weak:
+description: Der Pfad der Kaempfer und Ritter.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Smite:
+        max-distance: 5
+        damage: 15
+        mana: 25
+        cooldown: 10000
+        level: 1
+    Basher:
+        chance-to-stun: 0.2
+        level: 10
+        cooldown: 1000
+        duration: 2000
+    Charge:
+        max-distance: 15
+        cooldown: 20000
+        mana: 35
+        level: 20
+    Bandage:
+        level: 30
+        max-distance: 2
+        reagent: PAPER
+        reagent-cost: 2
+        health: 5
+        mana: 5
+        cooldown: 500
+    Bleed:
+        max-distance: 10
+        duration: 10000
+        period: 2000
+        tick-damage: 5
+        cooldown: 25000
+        mana: 30
+        level: 40
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 25
+max-health-per-level: 0.5
+expmodifier: 4.0
+item-damage:
+  air: 4
+  WOOD_SWORD: 5
+  STONE_SWORD: 6
+  IRON_SWORD: 8
+projectile-damage:
+  Arrow: 3
+tier: 1
+recipes: [ default ]

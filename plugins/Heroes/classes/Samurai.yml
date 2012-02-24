@@ -1,0 +1,79 @@
+name: Samurai
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Krieger
+    weak:
+description: Samurai spezialisieren sich auf den Kampf mit Bogen und Schwert.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD_SWORD
+- BOW
+permitted-skills:
+    Critical:
+        level: 1
+        chance: 0.35
+        damage-multiplier: 2.0
+    Basher: 
+        level: 1 
+        chance-to-stun: 0.4
+        duration: 2000
+        cooldown: 2000
+    Tackle: 
+        level: 10
+        mana: 20
+        cooldown: 10000
+        max-distance: 15
+        duration: 3000
+        damage: 12
+    Cripple: 
+        level: 20
+        mana: 20
+        cooldown: 20000
+        max-distance: 15
+        duration: 10000
+        tick-damage: 5
+        damage: 10
+        period: 2000
+    FireArrow: 
+        level: 30
+        cooldown: 15000
+        mana: 1
+        mana-per-shot: 20
+        cooldown: 1000
+        damage: 20
+        fire-ticks: 100
+    Arrowstorm: 
+        level: 40
+        mana: 40
+        cooldown: 30000
+        reagent: 262
+        reagent-cost: 32
+        max_arrows: 64
+        min_arrows: 32
+        min_rate: 5
+        max_rate: 10
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 35
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 5
+  WOOD_SWORD: 7
+  STONE_SWORD: 8
+  IRON_SWORD: 10
+  GOLD_SWORD: 12
+projectile-damage:
+  Arrow: 12
+tier: 2
+recipes: [ default ]

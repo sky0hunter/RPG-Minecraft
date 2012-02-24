@@ -1,0 +1,72 @@
+name: Beschwoerer
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Hexer
+    weak:
+description: Beschwoerer sind Meister der Beschwoerungen.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Fireball:
+        damage: 10
+        cooldown: 2000
+        level: 1
+    Bolt:
+        level: 1
+        damage: 20
+        mana: 15
+        cooldown: 5000
+    Zombie:
+        level: 10
+        mana: 5
+        cooldown: 2000
+    Tether:
+        level: 10
+        mana: 15
+        cooldown: 15000
+        duration: 7500
+    Creeper:
+        level: 20
+        mana: 5
+        cooldown: 5000
+    Piggify:
+        level: 20
+        mana: 25
+        max-distance: 15
+        duration: 10000
+        cooldown: 15000
+    Skele:
+        level: 30
+        mana: 5
+        cooldown: 3000
+    Fatigue:
+        level: 40
+        max-distance: 15
+        duration: 20000
+        mana: 50
+        cooldown: 30000
+        period: 1000
+        tick-damage: 2
+        radius: 5
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 3
+  stick: 9
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

@@ -1,0 +1,32 @@
+name: Meisterdruide
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Druide
+    weak:
+description: Meisterdruiden sind mit der Natur eins geworden.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+experience-sources:
+- KILLING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 5
+  stick: 10
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

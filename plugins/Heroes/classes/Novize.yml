@@ -1,0 +1,67 @@
+name: Novize
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Anfaenger
+    weak:
+description: Der Pfad der Hexer und Magier.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Fireball:
+        level: 1
+        damage: 9
+        fire-ticks: 1
+        mana: 10
+        cooldown: 1000
+    Bolt:
+        level: 10
+        damage: 15
+        max-distance: 15
+        duration: 2000
+        mana: 30
+        cooldown: 5000
+    Consume:
+        level: 20
+        mana_give: 15
+        reagent: MELON
+        reagent-cost: 1
+    Slow:
+        level: 30
+        max-distance: 15
+        speed-multiplier: 3
+        duration: 10000
+        mana: 35
+        cooldown: 30000
+    Multibolt:
+        level: 40
+        max_strikes: 5
+        multiplier_chance: 50
+        damage: 15
+        range: 50
+        mana: 75
+        cooldown: 60000
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+- PVP
+permission-skills:
+base-max-health: 20
+max-health-per-level: 0.5
+expmodifier: 4.0
+item-damage:
+  air: 1
+  stick: 5
+projectile-damage:
+  Arrow: 3
+tier: 1
+recipes: [ default ]

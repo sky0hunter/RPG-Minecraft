@@ -1,0 +1,96 @@
+name: Paladin
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Ritter
+    weak:
+description: Paladine sind die auserwaehlten der Goetter.
+permitted-armor:
+- LEATHER
+- IRON
+- DIAMOND
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD_SWORD
+permitted-skills:
+    Might:
+        level: 1
+        mana: 35
+        cooldown: 35000
+        duration: 10000
+        radius: 15
+        damage-bonus: 1.5
+    Vitalize:
+        level: 1
+        mana: 5
+        tick-mana: 5
+        cooldown: 40000
+        duration: 10000
+        tick-heal: 6
+        period: 1000
+        radius: 10
+    Charge:
+        level: 10
+        mana: 20
+        cooldown: 20000
+        max-distance: 15
+        stun-duration: 1000
+        slow-duration: 10000
+        silence-duration: 5000
+        damage: 20
+        radius: 3
+    Smite:
+        level: 10
+        mana: 5
+        cooldown: 6000
+        damage: 20
+        max-distance: 10
+    Shield:
+        level: 20
+        iron-door: 0.5
+        wooden-door: 0.4
+        trapdoor: 0.3
+    GroupHeal:
+        mana: 25
+        heal-amount: 25
+        radius: 10
+        cooldown: 3000
+        level: 20
+    Empathy:
+        level: 30
+        mana: 20
+        cooldown: 20000
+        max-distance: 15
+        max-damage: 0
+        damage-modifier: 1
+    GuardianAngel:
+        level: 40
+        mana: 40
+        cooldown: 60000
+        radius: 15
+        duration: 5000
+    Reborn:
+        level: 50
+        cooldown: 600000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 25
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 5
+  WOOD SWORD: 6
+  STONE SWORD: 7
+  IRON SWORD: 8
+  GOLD SWORD: 10
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

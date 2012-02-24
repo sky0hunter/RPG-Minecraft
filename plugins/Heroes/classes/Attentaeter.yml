@@ -1,0 +1,81 @@
+name: Attentaeter
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Schurke
+    weak:
+description: Attentaeter spezialiesieren sich auf das schnelle toeten.
+permitted-armor:
+- LEATHER
+- GOLD
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- GOLD_SWORD
+permitted-skills:
+    Sneak:
+        duration: 600000
+        damage-cancels: true
+        atacking-cancels: true
+        refresh-interval: 5000
+        level: 1
+        mana: 10
+        cooldown: 1000
+    Poison:
+        level: 10
+        max-distance: 5
+        duration: 10000
+        period: 2000
+        tick-damage: 6
+        mana: 25
+        cooldown: 15000
+    Backstab:
+        level: 1
+        attack-bonus: 2.5
+        attack-chance: 0.5
+        sneak-bonus: 3.5
+        sneak-chance: 1.0
+    Escape:
+        level: 20
+        duration: 5000
+        max-distance: 15
+        mana: 50
+        cooldown: 30000
+    EscapeArtist:
+        level: 20
+        duration: 5000
+        max-distance: 15
+        mana: 50
+        cooldown: 30000
+    Cripple:
+        level: 30
+        duration: 10000
+        period: 1000
+        tick-damage: 3
+        damage: 5
+    Smoke:
+        level: 40
+        mana: 20
+        cooldown: 30000
+        duration: 25000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 20
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 5
+  WOOD_SWORD: 8
+  STONE_SWORD: 9
+  IRON_SWORD: 11
+  GOLD_SWORD: 13
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

@@ -1,0 +1,63 @@
+name: Geistwandler
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Schamane
+    weak:
+description: Geistwandler beherschen maechtige Naturmagie.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Bolt:
+        level: 1
+        damage: 15
+        cooldown: 3000
+        mana: 10
+    RegenMana:
+        level: 10
+        regen-amount: 5
+    Icebolt:
+        level: 20
+        damage: 10
+        slow-duration: 5000
+        speed-multiplier: 2
+        cooldown: 6000
+        mana: 10
+    Firespin:
+        level: 30
+        max-distance: 30
+        mana: 20
+        cooldown: 10000
+    Root:
+        level: 30
+        mana: 25
+        duration: 7500
+        cooldown: 15000
+    Glassshield:
+        level: 40
+        min_duration: 20000
+        max_duration: 20000
+        mana: 50
+        cooldown: 20000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 3
+  book: 7
+  sapling: 9
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

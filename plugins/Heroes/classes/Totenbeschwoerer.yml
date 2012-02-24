@@ -1,0 +1,98 @@
+name: Totenbeschwoerer
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Nekromant
+    weak:
+description: Totenbeschwoerer beherschen Zauber die ihre Gegner qualvoll sterben lassen.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    HealBomb:
+        max-distance: 15
+        health: 15
+        damage: 30
+        radius: 7
+        mana: 25
+        cooldown: 5000
+        level: 1
+    UnholyRitual:
+        level: 1
+        max-distance: 20
+        mana-give: 50
+        cooldown: 7500
+    Zombie:
+        level: 1
+        mana: 5
+        cooldown: 2000
+    Tether:
+        level: 10
+        mana: 15
+        cooldown: 15000
+        duration: 10000
+    Creeper:
+        level: 1
+        mana: 5
+        cooldown: 5000
+    Firewall:
+        level: 20
+        mana: 25
+        cooldown: 15000
+        max duration seconds: 15
+        min duration seconds: 15
+        max length: 15
+        max-distance: 25
+    Skele:
+        level: 1
+        mana: 5
+        cooldown: 3000
+    Harmtouch:
+        level: 20
+        max-distance: 7
+        damage: 40
+        mana: 30
+        cooldown: 15000
+    Cripple:
+        level: 30
+        max-distance: 10
+        duration: 15000
+        period: 1500
+        tick-damage: 4
+        damage: 5
+        mana: 20
+        cooldown: 15000
+    Curse:
+        level: 40
+        max-distance: 15
+        duration: 10000
+        miss-chance: 0.5
+        mana: 20
+        cooldown: 15000
+    CreepingPain:
+        level: 50
+        max-distance: 10
+        duration: 10000
+        mana: 30
+        cooldown: 25000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 40
+max-health-per-level: 0.5
+expmodifier: 1.0
+item-damage:
+  air: 3
+  stick: 9
+  88: 13
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]

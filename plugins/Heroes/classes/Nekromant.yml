@@ -1,0 +1,77 @@
+name: Nekromant
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Heiler
+    weak:
+description: Nekromanten spezialisieren sich auf die unheilige Magie.
+permitted-armor:
+- LEATHER
+- GOLD
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    HealBomb:
+        max-distance: 15
+        health: 10
+        damage: 20
+        radius: 5
+        mana: 20
+        cooldown: 5000
+        level: 1
+    UnholyRitual:
+        level: 1
+        max-distance: 20
+        mana-give: 50
+        cooldown: 10000
+    Zombie:
+        level: 10
+        mana: 5
+        cooldown: 2000
+    Tether:
+        level: 10
+        mana: 15
+        cooldown: 15000
+        duration: 7500
+    Creeper:
+        level: 20
+        mana: 5
+        cooldown: 5000
+    Firewall:
+        level: 20
+        mana: 15
+        cooldown: 15000
+        max duration seconds: 10
+        min duration seconds: 10
+        max length: 10
+        max-distance: 20
+    Skele:
+        level: 30
+        mana: 5
+        cooldown: 3000
+    Harmtouch:
+        level: 40
+        max-distance: 5
+        damage: 35
+        mana: 35
+        cooldown: 15000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 3
+  stick: 6
+  88: 9
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

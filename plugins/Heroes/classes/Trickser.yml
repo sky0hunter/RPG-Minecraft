@@ -1,0 +1,67 @@
+name: Trickser
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Schurke
+    weak:
+description: Trickser spezialisieren sich auf die Taeuschung ihrer Gegner.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+- BOW
+permitted-skills:
+    Sneak:
+        level: 1
+        mana: 5
+        cooldown: 1000
+    Blink:
+        level: 1
+        mana: 10
+        max-distance: 15
+        cooldown: 5000
+    Telekinesis:
+        level: 10
+        mana: 5
+        cooldown: 1000
+    Confuse:
+        level: 10
+        mana: 25
+        cooldown: 15000
+        duration: 10000
+        max-drift: 0.5
+        period: 1000
+    Smoke:
+        level: 20
+        mana: 30
+        cooldown: 30000
+        duration: 20000
+    Wrestle:
+        level: 30
+        duration: 10000
+        radius: 15
+    Tether:
+        level: 40
+        duration: 15000
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 30
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 4
+  WOOD SWORD: 7
+  STONE SWORD: 8
+  IRON SWORD: 9
+  string: 10
+projectile-damage:
+  Arrow: 11
+tier: 2
+recipes: [ default ]

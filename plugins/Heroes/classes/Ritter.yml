@@ -1,0 +1,77 @@
+name: Ritter
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Krieger
+    weak:
+description: Ritter spezialisieren sich auf den Kampf in Ruestungen.
+permitted-armor:
+- LEATHER
+- IRON
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Might:
+        level: 1
+        mana: 30
+        cooldown: 25000
+        duration: 10000
+        radius: 10
+        damage-bonus: 1.5
+    Smite:
+        level: 1
+        mana: 5
+        cooldown: 7500
+        damage: 15
+        max-distance: 8
+    Stun:
+        level: 10
+        mana: 15
+        duration: 2000
+        max-distance: 8
+        cooldown: 15000
+    Vitalize:
+        level: 20
+        mana: 5
+        tick-mana: 5
+        cooldown: 45000
+        duration: 10000
+        tick-heal: 5
+        period: 1000
+        radius: 10
+    Charge:
+        level: 30
+        mana: 25
+        cooldown: 20000
+        max-distance: 15
+        stun-duration: 0
+        slow-duration: 7500
+        silence-duration: 2500
+        damage: 15
+        radius: 3
+    Shield:
+        level: 40
+        iron-door: 0.4
+        wooden-door: 0.3
+        trapdoor: 0.2
+experience-sources:
+- KILLING
+- PVP
+permission-skills:
+base-max-health: 20
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 5
+  WOOD_SWORD: 5
+  STONE_SWORD: 6
+  IRON_SWORD: 7
+projectile-damage:
+  Arrow: 3
+tier: 2
+recipes: [ default ]

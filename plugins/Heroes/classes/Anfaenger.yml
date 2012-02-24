@@ -1,0 +1,33 @@
+name: Anfaenger
+default: true
+user-class: true
+primary: true
+secondary: false
+description: Der Anfaenger Pfad.
+permitted-armor:
+- LEATHER
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Mercy:
+        level: 1
+experience-sources:
+- KILLING
+- CRAFTING
+- MINING
+- LOGGING
+permission-skills:
+base-max-health: 15
+max-health-per-level: 0.5
+expmodifier: 500.0
+item-damage:
+  air: 1
+  WOOD_SWORD: 3
+  STONE_SWORD: 4
+  IRON_SWORD: 5
+projectile-damage:
+  Arrow: 3
+tier: 1
+recipes: [ default ]

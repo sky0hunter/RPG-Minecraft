@@ -1,0 +1,70 @@
+name: Meisterdieb
+default: false
+user-class: true
+primary: true
+secondary: false
+parents:
+    strong:
+        - Dieb
+    weak:
+description: Als Meisterdieb sind dir keine Grenzen gesetzt deine Gegner zu bestehlen.
+permitted-armor:
+- LEATHER
+- GOLD
+permitted-weapon:
+- WOOD
+- STONE
+- IRON
+permitted-skills:
+    Smoke:
+        level: 1        
+        duration: 35000
+        cooldown: 20000
+        reagent: SULPHUR
+        reagent-cost: 1
+        mana: 25 
+    Sneak:
+        duration: 600000
+        damage-cancels: true
+        atacking-cancels: true
+        refresh-interval: 5000
+        level: 1
+        mana: 10
+        cooldown: 1000
+    Unlock: 
+        level: 10
+        cooldown: 5000
+        mana: 50
+        keys: 1 
+    PickPocket: 
+        level: 20
+        mana: 15
+        max-distance: 15
+        base-chance: 0.75
+        chance-per-level: 0.0630
+        always-steal-all: true
+        cooldown: 2000
+    Blink:
+        level: 30
+        use-text: '%hero% used %skill%!'
+        max-distance: 12
+        mana: 25
+        cooldown: 2000
+base-max-health: 40
+experience-sources:
+ - KILLING
+ - MINING
+ - CRAFTING
+ - PVP
+permission-skills:
+max-health-per-level: 0.5
+expmodifier: 2.0
+item-damage:
+  air: 2
+  WOOD_SWORD: 10
+  STONE_SWORD: 11
+  IRON_SWORD: 13
+projectile-damage:
+  Arrow: 3
+tier: 3
+recipes: [ default ]
