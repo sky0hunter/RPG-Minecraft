@@ -1,0 +1,172 @@
+Tame:
+  usage: Allows the player to ride monsters!
+  permissions:
+      - mobRider.command.goto
+      - mobRider.command.go
+      - mobRider.command.stop
+      - mobRider.command.follow
+      - mobRider.command.attack
+      - mobRider.animals
+BasicRune:
+  usage: Allows the player to use basic runes!
+  permissions:
+      - runecraft.runes.oracle
+      - runecraft.runes.compass
+      - runecraft.runes.depthnote
+      - runecraft.runes.personalteleporter
+      - runecraft.runes.warppoint
+      - runecraft.runes.waypoint
+      - runecraft.runes.teleporter
+BuildingRune:
+  usage: Allows the player to use building runes!
+  permissions:
+      - runecraft.runes.magicbeacon
+      - runecraft.runes.mound
+      - runecraft.runes.surfacetension
+      - runecraft.runes.topsyturvy
+AdvancedBuildingRune:
+  usage: Allows the player to use advanced building runes!
+  permissions:
+      - runecraft.runes.mineshaft
+      - runecraft.runes.wallmaster
+      - runecraft.runes.bridgemaster
+      - runecraft.runes.freezer
+      - runecraft.runes.uncrafter
+      - runecraft.runes.solarflare
+      - runecraft.runes.faith
+UtilityRune:
+  usage: Allows the player to use utility runes!
+  permissions:
+      - runecraft.runes.zeerixchest
+      - runecraft.runes.spring
+      - runecraft.runes.flotilla
+      - runecraft.runes.phantomtorch
+TimeRune:
+  usage: Allows the player to use time runes!
+  permissions:
+      - runecraft.runes.chronotrigger
+ArmorRune:
+  usage: Allows the player to use armor runes!
+  permissions:
+      - runecraft.runes.endurance
+      - runecraft.runes.divershelmet
+      - runecraft.runes.fairyboots
+      - runecraft.runes.shield
+      - runecraft.runes.forcefield
+ToolRune:
+  usage: Allows the player to use tool runes!
+  permissions:
+      - runecraft.runes.powerpick
+      - runecraft.runes.powershovel
+      - runecraft.runes.poweraxe
+      - runecraft.runes.shield
+      - runecraft.runes.forcefield
+WeaponRune:
+  usage: Allows the player to use weapon runes!
+  permissions:
+      - runecraft.runes.bowoflight
+      - runecraft.runes.multishot
+      - runecraft.runes.magiclasso
+      - runecraft.runes.pyrokinesis
+      - runecraft.runes.firesword
+MetaRune:
+  usage: Allows the player to use meta runes!
+  permissions:
+      - runecraft.runes.dispelling
+      - runecraft.runes.engraver
+      - runecraft.runes.enchantmentswap
+      - runecraft.runes.mousetrap
+      - runecraft.runes.accelerator
+DoorRune:
+  usage: Allows the player to use door runes!
+  permissions:
+      - runecraft.runes.phaseblocks
+      - runecraft.runes.lockblock
+      - runecraft.runes.spleefblock
+      - runecraft.runes.hiddendoor
+      - runecraft.runes.hiddenpassage
+      - runecraft.runes.secretpanel
+AutomationRune:
+  usage: Allows the player to use automation runes!
+  permissions:
+      - runecraft.runes.automationdesignator
+      - runecraft.runes.redstonesensor
+      - runecraft.runes.pressuresensor
+      - runecraft.runes.damagesensor
+      - runecraft.runes.blocksensor
+BasicIC:
+  usage: Allows the player to use basic IC's!
+  permissions:
+      - falsebook.ic.mc1000
+      - falsebook.ic.mc1001
+      - falsebook.ic.mc1017
+      - falsebook.ic.mc1018
+      - falsebook.ic.mc1020
+      - falsebook.ic.mc1025
+      - falsebook.ic.mc1030
+      - falsebook.ic.mc1050
+      - falsebook.ic.mc1111
+      - falsebook.ic.mc2020
+      - falsebook.ic.mc2100
+      - falsebook.ic.mc2101
+      - falsebook.ic.mc2110
+      - falsebook.ic.mc2111
+      - falsebook.ic.mc2500
+      - falsebook.ic.mc2501
+      - falsebook.ic.mc2510
+      - falsebook.ic.mc2511
+      - falsebook.ic.mc3000
+      - falsebook.ic.mc3001
+      - falsebook.ic.mc3003
+      - falsebook.ic.mc3020
+      - falsebook.ic.mc3021
+      - falsebook.ic.mc3030
+      - falsebook.ic.mc3031
+      - falsebook.ic.mc3032
+      - falsebook.ic.mc3033
+      - falsebook.ic.mc3034
+      - falsebook.ic.mc3036
+      - falsebook.ic.mc3040
+      - falsebook.ic.mc3101
+      - falsebook.ic.mc4000
+      - falsebook.ic.mc4010
+      - falsebook.ic.mc4100
+      - falsebook.ic.mc4110
+      - falsebook.ic.mc4200
+      - falsebook.ic.mc8888
+DetectionIC:
+  usage: Allows the player to use detection IC's!
+  permissions:
+      - falsebook.ic.mc1230
+      - falsebook.ic.mc1260
+      - falsebook.ic.mc1261
+      - falsebook.ic.mc1262
+      - falsebook.ic.mc1263
+      - falsebook.ic.mc1270
+      - falsebook.ic.mc1271
+      - falsebook.ic.mc1272
+      - falsebook.ic.mc1280
+      - falsebook.ic.mc1281
+      - falsebook.ic.mc1282
+TriggerIC:
+  usage: Allows the player to use trigger IC's!
+  permissions:
+      - falsebook.ic.mc0111
+      - falsebook.ic.mc0260
+      - falsebook.ic.mc0261
+      - falsebook.ic.mc0263
+      - falsebook.ic.mc0270
+      - falsebook.ic.mc0271
+      - falsebook.ic.mc0272
+      - falsebook.ic.mc0280
+      - falsebook.ic.mc0281
+      - falsebook.ic.mc0282
+      - falsebook.ic.mc1110
+BuildingIC:
+  usage: Allows the player to use building IC's!
+  permissions:
+      - falsebook.blocks.lift
+      - falsebook.blocks.gate
+      - falsebook.blocks.bridge
+      - falsebook.blocks.door
+      - falsebook.blocks.hiddenswitch

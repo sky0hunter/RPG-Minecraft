@@ -1,0 +1,46 @@
+creature-health:
+    Chicken: 10
+    Cow: 10
+    Creeper: 20
+    Ghast: 40
+    Giant: 1000
+    Pig: 10
+    PigZombie: 35
+    Sheep: 10
+    Skeleton: 30
+    # Slime: 16 - not enabled due to variable size
+    Spider: 20
+    Squid: 10
+    Zombie: 25
+    Wolf: 20
+    CaveSpider: 25
+    Enderman: 60
+    Silverfish: 10
+    Villager: 75
+    Blaze: 40
+    MushroomCow: 20
+    # LavaSlime: 16 - not enabled cause they have variable size
+    SnowMan: 20
+creature-damage:
+    Creeper: 25
+    Giant: 15
+    Zombie: 3
+    PigZombie: 4
+    Wolf: 3
+    Enderman: 7
+    Skeleton: 5
+    Spider: 2
+    CaveSpider: 3
+    SnowMan: 2
+item-damage:
+    Air: 2
+environmental-damage:
+    FALL: .02 #Per block above 3
+    LAVA: .2
+    FIRE: .2
+    FIRE_TICK: 1 #flat amount per tick
+    SUFFOCATION: .05
+    DROWNING: .1
+    STARVATION: .05
+potions:
+    health-per-tier: .1
